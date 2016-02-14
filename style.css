@@ -1112,10 +1112,10 @@ nav.post-navigation {
 
 h4.jp-relatedposts-post-title a {
   color: grey;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 0.5rem; }
   h4.jp-relatedposts-post-title a:hover {
     color: #FFB040; }
 
 p.jp-relatedposts-post-context {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
