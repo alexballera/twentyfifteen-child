@@ -19,7 +19,7 @@
                 </address>
                 </h3>
                 <p><?php bloginfo('description'); ?></p>
-                <p>Conozco y utilizo, entre otros, los siguientes lenguajes, aplicaciones y frameworks:</p>
+                <p class="footer__social--p">Conoce y utiliza, entre otros, los siguientes lenguajes y frameworks:</p>
                 <ul class="footer__contact--tech">
                   <li><i class="fa fa-html5"></i></li>
                   <li><i class="fa fa-css3"></i></li>
