@@ -9886,7 +9886,7 @@ var lastsArticles = (0, _jquery2.default)(function () {
   // Request
   var template = '<li><a href=":url:" target="_blank">✔ :title:</a></li>';
 
-  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=5').then(function (lastArticles) {
+  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=8').then(function (lastArticles) {
     $projectContainer.find('.loader').remove();
     localStorage.lastArticles = JSON.stringify(lastArticles);
     renderShows(JSON.parse(localStorage.lastArticles));
@@ -9982,7 +9982,7 @@ var showCategories = (0, _jquery2.default)(function () {
   // Request
   var template = '<li><a href="/category/:url:" target="_blank"><i class="fa fa-folder-open"></i> :title:</a></li>';
 
-  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/categories/?number=5&order_by=count&order=DESC').then(function (categories) {
+  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/categories/?number=8&order_by=count&order=DESC').then(function (categories) {
     $projectContainer.find('.loader').remove();
     localStorage.categories = JSON.stringify(categories);
     renderShows(JSON.parse(localStorage.categories));
