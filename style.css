@@ -1110,10 +1110,10 @@ nav.post-navigation {
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
 
-.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+.hentry div#jp-relatedposts div.jp-relatedposts-items div.jp-relatedposts-post:hover .jp-relatedposts-post-title a, .hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
   color: grey;
   font-size: 1.5rem;
   line-height: 0.5rem; }
 
-.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context {
+.hentry div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context, .hentry div#jp-relatedposts div.jp-relatedposts-items-visual div.jp-relatedposts-post-nothumbs p.jp-relatedposts-post-excerpt {
   font-size: 1.2rem; }
