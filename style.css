@@ -1124,4 +1124,4 @@ nav.post-navigation {
   font-size: 0.8rem; }
 
 .jp-relatedposts-items p {
-  font-size: 1rem; }
+  font-size: 1rem !important; }
