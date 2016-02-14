@@ -18,7 +18,7 @@
                   <a href="mailto:alexballera@gmail.com"><?php bloginfo('name'); ?></a>
                 </address>
                 </h3>
-                <p><?php bloginfo('description'); ?></p><br>
+                <p><?php bloginfo('description'); ?></p>
                 <p>Conozco y utilizo, entre otros, los siguientes lenguajes, aplicaciones y frameworks:</p>
                 <ul class="footer__contact--tech">
                   <li><i class="fa fa-html5"></i></li>

@@ -1110,12 +1110,15 @@ nav.post-navigation {
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
 
-h4.jp-relatedposts-post-title a {
-  color: grey;
-  font-size: 1.2rem;
+.jp-relatedposts-post h4.jp-relatedposts-post-title a {
+  color: #FFB040;
+  font-size: 1.1rem;
   line-height: 0.5rem; }
-  h4.jp-relatedposts-post-title a:hover {
-    color: #FFB040; }
+  .jp-relatedposts-post h4.jp-relatedposts-post-title a:hover {
+    color: white; }
 
-p.jp-relatedposts-post-context {
-  font-size: 1rem; }
+.jp-relatedposts-post h4:hover {
+  color: #FFB040; }
+
+.jp-relatedposts-post p.jp-relatedposts-post-context {
+  font-size: 0.8rem; }
