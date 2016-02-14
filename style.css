@@ -1117,8 +1117,11 @@ nav.post-navigation {
   .jp-relatedposts-post h4.jp-relatedposts-post-title a:hover {
     color: white; }
 
-.jp-relatedposts-post h4:hover {
+.jp-relatedposts-post h4.jp-relatedposts-post-title:hover {
   color: #FFB040; }
 
 .jp-relatedposts-post p.jp-relatedposts-post-context {
   font-size: 0.8rem; }
+
+.jp-relatedposts-items p {
+  font-size: 1rem; }
