@@ -1112,13 +1112,14 @@ nav.post-navigation {
 
 .jp-relatedposts-post h4.jp-relatedposts-post-title a {
   color: #FFB040;
-  font-size: 1rem !important;
-  line-height: 0.5rem; }
+  font-size: 1rem !important; }
   .jp-relatedposts-post h4.jp-relatedposts-post-title a:hover {
     color: white; }
 
 .jp-relatedposts-post h4.jp-relatedposts-post-title:hover {
   background-color: #FFB040; }
+  .jp-relatedposts-post h4.jp-relatedposts-post-title:hover a:hover {
+    color: white; }
 
 .jp-relatedposts-items p {
   font-size: 1rem !important; }
