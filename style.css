@@ -1109,3 +1109,12 @@ nav.post-navigation {
   nav.post-navigation .nav-previous a span,
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
+
+.jp-relatedposts-post h4.jp-relatedposts-post-title a {
+  color: #FFB040;
+  font-size: 1.5rem !important; }
+  .jp-relatedposts-post h4.jp-relatedposts-post-title a:hover {
+    color: grey; }
+
+.jp-relatedposts-items p {
+  font-size: 1rem !important; }
