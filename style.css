@@ -626,7 +626,8 @@ h3 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  padding-right: 0.3rem; }
   .content__articles--post:hover {
     background-color: #FFB040; }
     .content__articles--post:hover a h3 {
@@ -639,7 +640,8 @@ h3 {
       margin: 0.3rem;
       position: relative;
       border: none;
-      width: 48%; } }
+      width: 48%;
+      padding-right: 0; } }
   @media screen and (min-width: 64em) {
     .content__articles--post {
       width: 30%; } }
