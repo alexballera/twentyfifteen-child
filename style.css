@@ -898,6 +898,8 @@ h3 {
         background-color: #DC4E41; }
       .footer__social--redes li i.fa-github-alt:hover {
         background-color: #010101; }
+      .footer__social--redes li i.fa-rss:hover {
+        background-color: #FF9900; }
       .footer__social--redes li i.fa-envelope-o:hover {
         background-color: #8344CC; }
   .footer__content {
