@@ -1037,6 +1037,9 @@ body {
     body:before {
       display: none; } }
 
+.site-main {
+  padding-top: 3rem; }
+
 .post-thumbnail img {
   width: 100%; }
 
@@ -1110,6 +1113,9 @@ nav.post-navigation {
   nav.post-navigation .nav-previous a span,
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
+
+.comments-area p.must-log-in a {
+  color: #1E1E1E; }
 
 .jp-relatedposts-post h4.jp-relatedposts-post-title a {
   color: #FFB040;
