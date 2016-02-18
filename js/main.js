@@ -9947,7 +9947,7 @@ var showArticles = (0, _jquery2.default)(function () {
   // Request
   var template = '<section class="content__articles--post" style="display: flex; align-items: center;">\n        <picture class="content__articles--post--picture">\n          <a href=":url:" target="_blank" class="content__articles--post--link">\n            <img src=":image:" alt=":image alt:">\n          </a>\n        </picture>\n        <div class="content__articles--post--title">\n          <a href=":link:" target="_blank"><h3>:title:</h3></a>\n          <picture class="content__articles--post--avatar" style="display:flex;align-items:center;">\n            <a href=":profile img:" target="_blank">\n            <img src=":avatar:" alt=":avatar alt:"\n              style="width:17.5px;height:17.5px;margin:8px;">\n            </a>\n            <a href=":profile:" target="_blank" class="content__articles--post--link">\n              <figcaption style="display:block;outline:none;font-size:70%;color:grey;"><span style="font-weight:700;">:author:</span> | <i class="fa fa-folder-open"></i> :category:, :category2:</figcaption>\n            </a>\n          </picture>\n        </div>\n  </section>';
 
-  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6').then(function (articles) {
+  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6&category=sin-categoria,responsive,html,css,wordpress,rails,servidor,git,javascript').then(function (articles) {
     $projectContainer.find('.loader').remove();
     localStorage.articles = JSON.stringify(articles);
     renderShows(JSON.parse(localStorage.articles));
@@ -9982,7 +9982,7 @@ var showCategories = (0, _jquery2.default)(function () {
   // Request
   var template = '<li><a href="/category/:url:" target="_blank"><i class="fa fa-folder-open"></i> :title:</a></li>';
 
-  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/categories/?number=10&order_by=count&order=DESC').then(function (categories) {
+  _jquery2.default.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/categories/?number=6&order_by=count&order=DESC').then(function (categories) {
     $projectContainer.find('.loader').remove();
     localStorage.categories = JSON.stringify(categories);
     renderShows(JSON.parse(localStorage.categories));
