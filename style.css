@@ -1042,11 +1042,10 @@ header.entry-header h1 {
   font-weight: bold;
   font-family: "FontAwesome", Arial, sans-serif; }
 
-.author-description p {
+.author-description p.author-bio {
   font-size: 1rem; }
-
-.author-description a.author-link {
-  color: #1E1E1E; }
+  .author-description p.author-bio a.author-link {
+    color: #1E1E1E; }
 
 footer.entry-footer span {
   font-size: 1rem; }
