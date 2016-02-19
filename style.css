@@ -1027,14 +1027,14 @@ header.entry-header h1 {
     text-align: justify;
     margin-top: 1rem; }
     .entry-content p a {
-      color: grey;
+      color: #1E1E1E;
       font-weight: bolder;
       text-decoration: none; }
 
 .author-info {
   font-family: "FontAwesome", Arial, sans-serif; }
   .author-info h2 {
-    font-size: 1.2em;
+    font-size: 1.1rem;
     font-family: "FontAwesome", Arial, sans-serif; }
 
 .author-description h3 {
@@ -1044,6 +1044,9 @@ header.entry-header h1 {
 
 .author-description p {
   font-size: 1rem; }
+
+.author-description a.author-link {
+  color: #1E1E1E; }
 
 footer.entry-footer span {
   font-size: 1rem; }
@@ -1076,3 +1079,6 @@ nav.post-navigation {
 
 .jp-relatedposts-items p {
   font-size: 1rem !important; }
+
+.yikes-mailchimp-container span.edit-link a.post-edit-lonk {
+  color: #1E1E1E; }
