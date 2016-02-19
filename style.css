@@ -1042,6 +1042,12 @@ header.entry-header h1 {
   font-weight: bold;
   font-family: "FontAwesome", Arial, sans-serif; }
 
+.author-description a.author-link {
+  color: #1E1E1E; }
+
+.author-description a {
+  color: #1E1E1E; }
+
 .author-description p.author-bio {
   font-size: 1rem; }
   .author-description p.author-bio a.author-link {
