@@ -1063,6 +1063,13 @@ nav.post-navigation {
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
 
+/*
+* Disqus
+*/
+#layout {
+  width: 80%;
+  margin: 0 auto; }
+
 .jp-relatedposts-post h4.jp-relatedposts-post-title a {
   color: #FFB040;
   font-size: 1.5rem !important; }
