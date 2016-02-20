@@ -1040,6 +1040,9 @@ header.entry-header h1 {
   font-weight: bold;
   font-family: "FontAwesome", Arial, sans-serif; }
 
+.author-description p.author-bio {
+  font-size: 1rem; }
+
 footer.entry-footer span {
   font-size: 1rem; }
   footer.entry-footer span.posted-on::before, footer.entry-footer span.byline::before, footer.entry-footer span.cat-links::before, footer.entry-footer span.edit-link::before, footer.entry-footer span.tags-links::before {
@@ -1063,9 +1066,11 @@ nav.post-navigation {
 /*
 * Disqus
 */
-div#layout {
-  width: 80% !important;
-  margin: 0 auto !important; }
+div#layout,
+div#disqus_thread {
+  width: 85%;
+  margin: 1rem auto;
+  padding: 1rem; }
 
 .jp-relatedposts-post h4.jp-relatedposts-post-title a {
   color: #FFB040;
