@@ -121,8 +121,7 @@ body {
   font-family: "FontAwesome", Arial, sans-serif; }
 
 a {
-  text-decoration: none;
-  color: white; }
+  text-decoration: none !important; }
 
 h1 {
   font-size: 1.8rem; }
@@ -1027,7 +1026,6 @@ header.entry-header h1 {
     text-align: justify;
     margin-top: 1rem; }
     .entry-content p a {
-      color: #1E1E1E;
       font-weight: bolder;
       text-decoration: none; }
 
@@ -1042,16 +1040,8 @@ header.entry-header h1 {
   font-weight: bold;
   font-family: "FontAwesome", Arial, sans-serif; }
 
-.author-description a.author-link {
-  color: #1E1E1E; }
-
-.author-description a {
-  color: #1E1E1E; }
-
 .author-description p.author-bio {
   font-size: 1rem; }
-  .author-description p.author-bio a.author-link {
-    color: #1E1E1E; }
 
 footer.entry-footer span {
   font-size: 1rem; }
@@ -1072,9 +1062,6 @@ nav.post-navigation {
   nav.post-navigation .nav-previous a span,
   nav.post-navigation .nav-next a span {
     font-family: "FontAwesome", Arial, sans-serif; }
-
-.comments-area p.must-log-in a {
-  color: #1E1E1E; }
 
 .jp-relatedposts-post h4.jp-relatedposts-post-title a {
   color: #FFB040;

@@ -9929,51 +9929,6 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mailChimp = (0, _jquery2.default)(function () {
-  window.fnames = new Array();
-  window.ftypes = new Array();
-  fnames[0] = 'EMAIL';
-  ftypes[0] = 'email';
-  fnames[1] = 'FNAME';
-  ftypes[1] = 'text';
-  fnames[2] = 'MMERGE2';
-  ftypes[2] = 'text';
-  /*
-   * Translated default messages for the $ validation plugin.
-   * Locale: ES
-   */
-  _jquery2.default.extend(_jquery2.default.validator.messages, {
-    required: "Este campo es obligatorio.",
-    remote: "Por favor, rellena este campo.",
-    email: "Por favor, escribe una dirección de correo válida",
-    url: "Por favor, escribe una URL válida.",
-    date: "Por favor, escribe una fecha válida.",
-    dateISO: "Por favor, escribe una fecha (ISO) válida.",
-    number: "Por favor, escribe un número entero válido.",
-    digits: "Por favor, escribe sólo dígitos.",
-    creditcard: "Por favor, escribe un número de tarjeta válido.",
-    equalTo: "Por favor, escribe el mismo valor de nuevo.",
-    accept: "Por favor, escribe un valor con una extensión aceptada.",
-    maxlength: _jquery2.default.validator.format("Por favor, no escribas más de {0} caracteres."),
-    minlength: _jquery2.default.validator.format("Por favor, no escribas menos de {0} caracteres."),
-    rangelength: _jquery2.default.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
-    range: _jquery2.default.validator.format("Por favor, escribe un valor entre {0} y {1}."),
-    max: _jquery2.default.validator.format("Por favor, escribe un valor menor o igual a {0}."),
-    min: _jquery2.default.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
-  });
-});
-var $mcj = _jquery2.default.noConflict(true);
-module.exports = mailChimp;
-
-},{"jquery":1}],8:[function(require,module,exports){
-'use strict';
-
-var _jquery = require('jquery');
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 var showArticles = (0, _jquery2.default)(function () {
   // Variables Globales
   var $projectContainer = (0, _jquery2.default)('#content_articles').find('.content__articles--container');
@@ -9982,7 +9937,7 @@ var showArticles = (0, _jquery2.default)(function () {
   function renderShows(articles) {
     $projectContainer.find('.loader').remove();
     articles.posts.forEach(function (project) {
-      var projectTemplate = template.replace(':title:', project.title).replace(':url:', project.short_URL).replace(':link:', project.short_URL).replace(':link content:', project.short_URL).replace(':image:', project.featured_image).replace(':image alt:', project.title + ' Image').replace(':summary:', project.excerpt).replace(':author:', project.author.name).replace(':avatar:', project.author.avatar_URL).replace(':avatar alt:', project.author.name + ' Logo').replace(':profile:', project.author.profile_URL).replace(':profile img:', project.author.profile_URL).replace(':category:', Object.keys(project.categories)[0]).replace(':category2:', Object.keys(project.categories)[1]);
+      var projectTemplate = template.replace(':title:', project.title).replace(':url:', project.short_URL).replace(':link:', project.short_URL).replace(':link content:', project.short_URL).replace(':image:', project.featured_image).replace(':image alt:', project.title + ' Image').replace(':author:', project.author.name).replace(':avatar:', project.author.avatar_URL).replace(':avatar alt:', project.author.name + ' Logo').replace(':profile:', project.author.profile_URL).replace(':profile img:', project.author.profile_URL).replace(':category:', Object.keys(project.categories)[0]).replace(':category2:', Object.keys(project.categories)[1]);
 
       var $projectTemplate = (0, _jquery2.default)(projectTemplate);
       $projectTemplate.hide();
@@ -10000,7 +9955,7 @@ var showArticles = (0, _jquery2.default)(function () {
 });
 module.exports = showArticles;
 
-},{"jquery":1}],9:[function(require,module,exports){
+},{"jquery":1}],8:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -10035,7 +9990,7 @@ var showCategories = (0, _jquery2.default)(function () {
 });
 module.exports = showCategories;
 
-},{"jquery":1}],10:[function(require,module,exports){
+},{"jquery":1}],9:[function(require,module,exports){
 'use strict';
 
 var navbarMenu = document.getElementById('navbarMenu');
@@ -10054,7 +10009,7 @@ var showMenu = function showMenu() {
 };
 module.exports = showMenu;
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -10071,7 +10026,7 @@ var showProjects = (0, _jquery2.default)(function () {
   function renderShows(projects) {
     $projectContainer.find('.loader').remove();
     projects.posts.forEach(function (project) {
-      var projectTemplate = template.replace(':title:', project.title).replace(':url:', project.short_URL).replace(':link:', project.short_URL).replace(':link content:', project.short_URL).replace(':image:', project.featured_image).replace(':image alt:', project.title + ' Image').replace(':summary:', project.excerpt).replace(':author:', project.author.name).replace(':avatar:', project.author.avatar_URL).replace(':avatar alt:', project.author.name + ' Logo').replace(':profile:', project.author.profile_URL).replace(':profile img:', project.author.profile_URL);
+      var projectTemplate = template.replace(':title:', project.title).replace(':url:', project.short_URL).replace(':link:', project.short_URL).replace(':link content:', project.short_URL).replace(':image:', project.featured_image).replace(':image alt:', project.title + ' Image').replace(':author:', project.author.name).replace(':avatar:', project.author.avatar_URL).replace(':avatar alt:', project.author.name + ' Logo').replace(':profile:', project.author.profile_URL).replace(':profile img:', project.author.profile_URL);
       // .replace(':category:', project.categories.Proyectos.name)
       // .replace(':category2:', Object.keys(project.categories)[1])
 
@@ -10091,7 +10046,7 @@ var showProjects = (0, _jquery2.default)(function () {
 });
 module.exports = showProjects;
 
-},{"jquery":1}],12:[function(require,module,exports){
+},{"jquery":1}],11:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -10146,15 +10101,11 @@ var _showCategories = require('./lib/showCategories');
 
 var _showCategories2 = _interopRequireDefault(_showCategories);
 
-var _mailChimp = require('./lib/mailChimp.js');
-
-var _mailChimp2 = _interopRequireDefault(_mailChimp);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Descomentar si se está en línea
+// import mailChimp from './lib/mailChimp.js'  // Descomentar si se está en línea
 
-// Descomentar si se está en línea
 // Descomentar si se está en línea
 // Descomentar si se está en línea
 (function () {
@@ -10179,14 +10130,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _loadCSS2.default)(urlCSS);
 
     // Load JS
-    var urlJs = ['//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8', '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'];
+    var urlJs = ['//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8'
+    // '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
+    ];
     (0, _loadJS2.default)(urlJs);
   }
 })(); // Descomentar si se está en línea
 // Descomentar si se está en línea
 // Descomentar si se está en línea
 
-},{"./lib/changeButton":2,"./lib/doTransparentBar":3,"./lib/lastsArticles":4,"./lib/loadCSS":5,"./lib/loadJS":6,"./lib/mailChimp.js":7,"./lib/showArticles":8,"./lib/showCategories":9,"./lib/showMenu":10,"./lib/showProjects":11,"./vendors/modernizr.js":13,"./vendors/retina.js":14,"./vendors/selectivizr.js":15,"jquery":1}],13:[function(require,module,exports){
+},{"./lib/changeButton":2,"./lib/doTransparentBar":3,"./lib/lastsArticles":4,"./lib/loadCSS":5,"./lib/loadJS":6,"./lib/showArticles":7,"./lib/showCategories":8,"./lib/showMenu":9,"./lib/showProjects":10,"./vendors/modernizr.js":12,"./vendors/retina.js":13,"./vendors/selectivizr.js":14,"jquery":1}],12:[function(require,module,exports){
 "use strict";
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
@@ -11158,7 +11111,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }window.Modernizr = Modernizr;
 }(window, document);
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -11345,7 +11298,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 })();
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 "use strict";
 
 /*
@@ -11900,4 +11853,4 @@ References:
 	};
 })(undefined);
 
-},{}]},{},[12]);
+},{}]},{},[11]);
