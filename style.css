@@ -1041,7 +1041,9 @@ header.entry-header h1 {
   font-family: "FontAwesome", Arial, sans-serif; }
 
 .author-description p.author-bio {
-  font-size: 1rem; }
+  font-size: 0.9rem; }
+  .author-description p.author-bio a.author-link {
+    font-size: 0.9rem; }
 
 footer.entry-footer span {
   font-size: 1rem; }
@@ -1066,7 +1068,6 @@ nav.post-navigation {
 /*
 * Disqus
 */
-div#layout,
 div#disqus_thread {
   width: 85%;
   margin: 1rem auto;
