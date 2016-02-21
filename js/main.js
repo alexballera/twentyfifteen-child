@@ -9897,19 +9897,6 @@ module.exports = lastsArticles;
 },{"jquery":1}],5:[function(require,module,exports){
 'use strict';
 
-var loadCSS = function loadCSS(url) {
-  for (var i = 0; i < url.length; i++) {
-    var elem = document.createElement('link');
-    elem.rel = 'stylesheet';
-    elem.href = url[i];
-    document.head.appendChild(elem);
-  }
-};
-module.exports = loadCSS;
-
-},{}],6:[function(require,module,exports){
-'use strict';
-
 var loadJS = function loadJS(url) {
   for (var i = 0; i < url.length; i++) {
     var elem = document.createElement('script');
@@ -9920,7 +9907,7 @@ var loadJS = function loadJS(url) {
 };
 module.exports = loadJS;
 
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -9955,7 +9942,7 @@ var showArticles = (0, _jquery2.default)(function () {
 });
 module.exports = showArticles;
 
-},{"jquery":1}],8:[function(require,module,exports){
+},{"jquery":1}],7:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -9990,7 +9977,7 @@ var showCategories = (0, _jquery2.default)(function () {
 });
 module.exports = showCategories;
 
-},{"jquery":1}],9:[function(require,module,exports){
+},{"jquery":1}],8:[function(require,module,exports){
 'use strict';
 
 var navbarMenu = document.getElementById('navbarMenu');
@@ -10009,7 +9996,7 @@ var showMenu = function showMenu() {
 };
 module.exports = showMenu;
 
-},{}],10:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -10046,7 +10033,7 @@ var showProjects = (0, _jquery2.default)(function () {
 });
 module.exports = showProjects;
 
-},{"jquery":1}],11:[function(require,module,exports){
+},{"jquery":1}],10:[function(require,module,exports){
 'use strict';
 
 var _jquery = require('jquery');
@@ -10076,10 +10063,6 @@ var _changeButton2 = _interopRequireDefault(_changeButton);
 var _doTransparentBar = require('./lib/doTransparentBar');
 
 var _doTransparentBar2 = _interopRequireDefault(_doTransparentBar);
-
-var _loadCSS = require('./lib/loadCSS');
-
-var _loadCSS2 = _interopRequireDefault(_loadCSS);
 
 var _loadJS = require('./lib/loadJS');
 
@@ -10127,7 +10110,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
     // Load CSS
     var urlCSS = ['https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'];
-    (0, _loadCSS2.default)(urlCSS);
+    // loadCSS(urlCSS)
 
     // Load JS
     var urlJs = ['//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8'
@@ -10137,9 +10120,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   }
 })(); // Descomentar si se está en línea
 // Descomentar si se está en línea
-// Descomentar si se está en línea
 
-},{"./lib/changeButton":2,"./lib/doTransparentBar":3,"./lib/lastsArticles":4,"./lib/loadCSS":5,"./lib/loadJS":6,"./lib/showArticles":7,"./lib/showCategories":8,"./lib/showMenu":9,"./lib/showProjects":10,"./vendors/modernizr.js":12,"./vendors/retina.js":13,"./vendors/selectivizr.js":14,"jquery":1}],12:[function(require,module,exports){
+// import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
+
+},{"./lib/changeButton":2,"./lib/doTransparentBar":3,"./lib/lastsArticles":4,"./lib/loadJS":5,"./lib/showArticles":6,"./lib/showCategories":7,"./lib/showMenu":8,"./lib/showProjects":9,"./vendors/modernizr.js":11,"./vendors/retina.js":12,"./vendors/selectivizr.js":13,"jquery":1}],11:[function(require,module,exports){
 "use strict";
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
@@ -11111,7 +11095,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }window.Modernizr = Modernizr;
 }(window, document);
 
-},{}],13:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 'use strict';
 
 /*!
@@ -11298,7 +11282,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 })();
 
-},{}],14:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 "use strict";
 
 /*
@@ -11853,4 +11837,4 @@ References:
 	};
 })(undefined);
 
-},{}]},{},[11]);
+},{}]},{},[10]);
