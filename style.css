@@ -1054,8 +1054,8 @@ header.entry-header h1 {
 footer.entry-footer span {
   font-size: 1rem; }
   footer.entry-footer span.posted-on::before, footer.entry-footer span.byline::before, footer.entry-footer span.cat-links::before, footer.entry-footer span.edit-link::before, footer.entry-footer span.tags-links::before {
-    font-size: 1.5rem;
-    line-height: 1.5rem; }
+    font-size: 1rem;
+    line-height: 1rem; }
 
 .comment-respond h3 {
   font-size: 2rem;
@@ -1063,7 +1063,7 @@ footer.entry-footer span {
   font-family: "FontAwesome", Arial, sans-serif; }
 
 .comment-respond form p label {
-  font-size: 1.5rem; }
+  font-size: 1rem; }
 
 nav.post-navigation {
   font-family: "FontAwesome", Arial, sans-serif; }
@@ -1091,5 +1091,11 @@ div#disqus_thread {
 /*
 * MailChimp
 */
-.yikes-mailchimp-container span.edit-link a.post-edit-lonk {
-  color: #1E1E1E; }
+.yikes-mailchimp-container form.yikes-easy-mc-form label input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "FontAwesome", Arial, sans-serif; }
+
+.yikes-mailchimp-container span.edit-link a.post-edit-link {
+  color: #1E1E1E;
+  font-size: 1rem; }
